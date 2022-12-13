@@ -1,0 +1,206 @@
+.margin-bottom-sm{margin-bottom:16px !important;}
+div.tooltip {color: #fff;background-color: rgb(0,0,0,0.7);padding: .5em;border-radius: 2px;position: absolute;border: 1px solid black;max-width:225px;visibility:hidden;font-size:12px}
+.tooltip p{margin:0;font-weight:300;margin-left:5pt}
+.tooltip div{margin-bottom:5pt}
+.legends{padding: 0;list-style: none;margin: 0;display: grid;grid-template-columns: repeat(2,1fr);}
+.legends li {margin: 5px 0;text-transform: uppercase;display: block;font-size: 10px;font-family: 'Montserrat', Arial, sans-serif;line-height: normal;}
+.legends.map .legend{padding: 0 5px;}
+.legend{padding: 1px 10px ;margin-right: 2px;border: 1px solid #000;}
+.map-container{
+    position: relative;
+    margin-bottom: 1em;
+}
+
+
+.card {
+  max-width: 960px;
+  border-radius: var(--border-radius-primary);
+  box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 28px 20px;
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    margin: 40px;
+    padding: 32px;
+  }
+}
+
+.card{
+ --font-family-primary: "Vollkorn", serif;
+ --font-family-secondary: "PT Sans", sans-serif;
+ --font-size-title: 32px;
+ --line-height-title: 1.4;
+ --font-size-caption: 14px;
+ --line-height-caption: 1.2;
+ --color-text: #222022;
+ --color-highlight-primary: #FFEF7E;
+ --color-highlight-secondary: #B7F9E9;
+ --border-radius-primary: 32px;
+}
+
+.card button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  box-sizing:border-box;
+  border-radius: 7px;
+}
+.head-tab{display:flex;}
+.tutup{font-size: 50px;font-weight: bold;position: absolute;bottom: 5px;right: 5px;}
+.tutup:hover{cursor: pointer;color: #9a9191;}
+ul.bahasa{margin:0; padding:0 10px;  width:auto; display:inline-flex; height:50px; font-size:12px;}
+ul.bahasa a{color:#fff;display: inline-flex;
+  align-items: center;}
+ul.bahasa li{width:100%; display:inline-flex; align-items:center; justify-content:center;flex-direction:column; position:relative; height:auto; padding:5px;}
+ul.bahasa li img{width:20px; height:20px; float:left; margin-right:5px;}
+ul.bahasa li ul.sub{display:none;}
+ul.bahasa li:hover ul.sub{display:block; position:absolute; top:100%; left:0; right:0; height:auto; background:#000; overflow:hidden; margin:0; padding:0; margin:0 -10px;}
+ul.bahasa li ul.sub li{width:100%; display:inline-flex; align-items:flex-start; justify-content:center; flex-direction:column; position:relative; height:auto; padding:10px; border:none; margin:0;}
+ul.bahasa li ul.sub li:hover{background:#333;}
+.left-navbar ul li:first-child{display:flex; align-items:center; justify-content:center;}
+@keyframes openLg {0% { top:-100px; }100%{top: 0;}}
+@keyframes closeLg {0%{top: 0;}100% { top: -100px;}}
+@keyframes fade {0% {opacity: 0;}100% {opacity: 1;}}
+
+@media only screen and (max-width: 950px) {
+ul.tabs {display: block;}
+.tab-content h3{width: 90%}
+}
+
+.rcorners4 {
+  border-radius: 15px;
+  border: 1.5px solid black;
+  padding: 20px;
+}
+
+.card__title h1{
+  font-family: Montserrat;
+  font-size: 50px;
+  line-height: 43px;
+}
+
+.rcorners4 h3{
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.rcorners4 h1{
+  font-size: 32px;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+#text{
+display:none;
+}
+
+.rcorners4 btn-container{
+  margin: auto;
+  height:44px;
+  width:166.23px;
+}
+
+a:active{
+  color:#ffd323;
+}
+.rcorners4 button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  box-sizing:border-box;
+  border-radius: 7px;
+}
+.rcorners4 p{
+  font-size:15px;
+}
+
+
+.card__image {
+  width: 100%;
+  max-height: 300px;
+  border-radius: var(--border-radius-primary);
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 18px;
+}
+@media (min-width: 576px) {
+  .card__image {
+    width: 45%;
+    max-height: none;
+    min-height: 400px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .card__content {
+    width: 55%;
+    padding-left: 40px;
+  }
+}
+
+.card__date {
+  display: block;
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+@media (min-width: 576px) {
+  .card__date {
+    margin-bottom: 8px;
+  }
+}
+
+.card__title {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--color-text);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  background-size: 100% 42%;
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  padding: 0 4px;
+  margin-left: -4px;
+}
+
+.box-s{border:1px solid #000; padding:16px; overflow:hidden; margin:15px 0;}
+.box-s .box-ins{padding:16px; border-radius:6px; border:1px solid #000; overflow:hidden;}
+.boxname{overflow:hidden; width:100%;}
+.boxname .fotow{width:60px; height:60px; border-radius:50%; overflow:hidden; display:flex; justify-content:center; align-items:center; overflow:hidden; float:left; margin-right:16px;}
+.box-s .box-ins p{margin:10px 0; font-size:16px; line-height:20px;}
+.boxname .fotow img{width:auto; height:100%;}
+.boxname .textname{overflow:hidden; min-height:60px;display: flex;flex-direction: column;justify-content: center;}
+.boxname .textname h4{margin:0; font-size:16px; line-height:20px; font-weight:bold;}
+.boxname .textname p{margin:0; font-size:16px; line-height:20px;} 
+.box-s.bluebox{border:none; padding:0; background:#6d75e7; color:#fff; border-radius:10px;}
+.box-s.bluebox .box-ins{border:none; border-radius:0;}
+.box-s.bluebox .box-ins h3.symbol{font-size:40px; line-height:41px; margin:0 0 15px 0; color:#fff;}
+.box-s.redbox{border:none; padding:0; background:#ff4f52; color:#fff; border-radius:10px;}
+.box-s.redbox .box-ins{border:none; border-radius:0;}
+.box-s.redbox .box-ins h3.symbol{font-size:40px; line-height:41px; margin:0 0 15px 0; color:#fff;}
+.box-s.redbox .fotow{width:100px; height:100px; margin:0 auto 15px auto; display:flex; justify-content:center; align-items:center; overflow:hidden; border-radius:50%;}
+.box-s.redbox .fotow img{width:auto; height:100%;}
+.box-s.redbox h2{text-align:center;}
+.box-s.redbox p.name{text-align:center;}
+.box-s.redbox .symbol{margin:0 auto; text-align:center;}
+@media (max-width: 740px){
+
+}
